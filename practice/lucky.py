@@ -6,6 +6,15 @@ def isEqual(row):
                 return True
     return False
 
+def isAllOdd(row):
+    count = 0
+    for i in row:
+        if 1 % 2 != 0:
+            count += 1
+    if len(row) == count:
+        return True
+
+print(1%2)
 # 总长度，位置
 length, position = 4, 4
 
