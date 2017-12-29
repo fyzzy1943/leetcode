@@ -4,6 +4,15 @@ class Solution:
         :type cost: List[int]
         :rtype: int
         """
+        n = len(cost)-1
+        def costSum(i, j):
+            if i == n or i == n-1:
+                return cost[i]
+
+            if cost[i] < cost[j]:
+                return cost[i] + costSum(i+2, j+2)
+            else:
+                return cost[j] + costSum(i + 2, j + 2)
         sum = 0
 
         while True:
@@ -17,6 +26,7 @@ class Solution:
 
 
         return sum
+
 
 cost1 = [10, 15, 20]
 cost2 = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
