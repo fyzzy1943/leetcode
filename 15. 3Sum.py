@@ -44,11 +44,12 @@ class Solution:
                         l += 1
         return res
 
+
 # print(range(2, 4))
-test1 = [-1,0,1,2,-1,-4]
+test1 = [-1, 0, 1, 2, -1, -4]
 print(test1)
 print(Solution().threeSum(test1))
 
-test2 = [-1,0,1,8,-4,-4,-4, 8, 8]
+test2 = [-1, 0, 1, 8, -4, -4, -4, 8, 8]
 print(test2)
 print(Solution().threeSum(test2))
